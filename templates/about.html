@@ -3,6 +3,10 @@
 {% block content %}
     <p>More about me :)</p>
 
+    {% if name %}
+    <p>Hello {{name}}!</p>
+    {% endif %}
+
     <form method="post" action="/contact">
         <input type="text" name="contact-name" placeholder="Enter your name">
         <br>
